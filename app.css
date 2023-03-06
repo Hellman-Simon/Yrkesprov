@@ -1,0 +1,163 @@
+body {
+    background-image: linear-gradient(to bottom right, rgb(110, 185, 255), rgba(92, 195, 255, 0.678));
+    color: white;
+    overflow: hidden;
+   }
+
+   .tree {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+    padding: 0;
+    margin: 0;
+    top: 10;
+    position: absolute;
+    z-index:-1;
+  }
+
+  .grass{
+    max-width: 110%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+    padding: 0;
+    margin: 0;
+    top: 70%;
+    left: -1%;
+    position: absolute;
+  }
+
+   .box {
+    width: 400px; 
+    height: 400px; 
+    background-color: rgba(0, 255, 0, 0.267); 
+    box-shadow: 0 0 10px rgb(70, 70, 70);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid green;
+    }
+    .score_stuff {
+        display: flex;
+        width: 90%;
+        top: 5%;
+        position: absolute;
+        justify-content: space-around;
+      }
+        .score_box {
+            background-color: #008b3f6c;
+            color: white;
+            padding: 30px 30px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(70, 70, 70, 0.596);
+            font-family: 'Roboto', sans-serif;
+            font-size: large;
+            border: 1px solid green;
+        }
+        .reset_score {
+            background-color: #008b3f6c;
+            color: white;
+            padding: 30px 30px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(70, 70, 70, 0.596);
+            font-family: 'Roboto', sans-serif;
+            font-size: large;
+            border: 1px solid green;
+        }
+
+        .spin1 {
+            width: 100px; 
+            height: 150px; 
+            background-color: #008b3f6c;
+            box-shadow: 0 0 10px rgba(70, 70, 70, 0.596);
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            font-family: 'Roboto', sans-serif; 
+            font-size: 50px; 
+            border: 1px solid green;
+        }
+        .spin2 {
+            width: 100px; 
+            height: 150px; 
+            background-color: #008b3f6c; 
+            box-shadow: 0 0 10px rgba(70, 70, 70, 0.596);
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 80%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            font-family: 'Roboto', sans-serif;   
+            font-size: 50px;   
+            border: 1px solid green;
+        }
+        .spin3 {
+            width: 100px; 
+            height: 150px; 
+            background-color: #008b3f6c;
+            box-shadow: 0 0 10px rgba(70, 70, 70, 0.596);
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            font-family: 'Roboto', sans-serif;    
+            font-size: 50px;   
+            border: 1px solid green;
+        }
+
+    .button-container {
+            display: flex;
+            width: 90%;
+            top: 73%;
+            position: absolute;
+            justify-content: space-around;
+          }
+        
+        .spin_button {
+            background-color: #008b3f6c;
+            color: white;
+            padding: 30px 148px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(70, 70, 70, 0.596);
+            font-family: 'Roboto', sans-serif;
+            font-size: larger;
+            border: 1px solid green;
+          }
+
+          button:hover {
+            transform: translateY(-3px);
+            background-color: #099c0ed7;
+          }

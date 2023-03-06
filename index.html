@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Fruit Game</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link href="app.css" rel="stylesheet">
+        <script src="app.js"></script>
+    </head>
+<body>
+<div class="box">
+    <div class="score_stuff">
+    <div class="score_box" id="score">0</div>
+    
+    <button id="reset-button" class="reset_score">Reset Score</button>
+        <script>
+            function resetScore() {
+                localStorage.setItem('score', 0);
+                updateScoreDisplay(0);
+            }
+
+            document.getElementById('reset-button').onclick = resetScore;
+    </script>
+    </div>
+    <div class="spin1" id="spin1"></div>
+    <div class="spin2" id="spin2"></div>
+    <div class="spin3" id="spin3"></div>
+    <div class="button-container">
+    <button onclick="spin()" class="spin_button" id="spin_button">Spin</button>
+    </div>
+</div>
+
+<div class="background">
+    <img src="images/tree.png" class="tree">
+    <img src="images/grass.png" class="grass">
+</div>
+
+</body>
+</html> 
